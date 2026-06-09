@@ -30,9 +30,7 @@ const Loader = () => {
     <div class="w-1 h-6 bg-green-500"></div>
   </div>
 </div>
-<h1>  
-  Server Running Slow.....
-</h1>
+
     </div>
   )
 }
