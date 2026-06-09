@@ -13,16 +13,24 @@ import { BrowserRouter } from "react-router-dom";
 import { Footer_Context_provider } from "./Footer_data_container.jsx";
 import { Page_context_provider } from "./page/Show_news_or_News_details_page.jsx";
 function App() {
-const router = createBrowserRouter([{
-  path:"/",
-  element:<News/>,
-  children:[
+const router = createBrowserRouter(
+  [
     {
-      path:"/News_details",
-      element:<News_details/>
-    }
-  ]
-}])
+      path: "/",
+      element: <News />,
+      children: [
+        {
+          path: "News_details",
+          element: <News_details />,
+        },
+      ],
+      errorElement: <Errorpage />,
+    },
+  ],
+  {
+    basename: "/News_App",
+  }
+);
 
 
 
