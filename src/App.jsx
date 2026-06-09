@@ -12,7 +12,7 @@ import { RouterProvider } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Footer_Context_provider } from "./Footer_data_container.jsx";
 import { Page_context_provider } from "./page/Show_news_or_News_details_page.jsx";
-import Errorpage from "../../News/src/Errorpage.jsx";
+import Errorpage from "./page/Errorpage.jsx";
 function App() {
 const router = createBrowserRouter(
   [
